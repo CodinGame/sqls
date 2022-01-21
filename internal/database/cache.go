@@ -81,7 +81,7 @@ func (u *DBCacheGenerator) genColumnCacheAll(ctx context.Context) (map[string][]
 func genColumnMap(columnDescs []*ColumnDesc) map[string][]*ColumnDesc {
 	columnMap := map[string][]*ColumnDesc{}
 	for _, desc := range columnDescs {
-		key := desc.Schema + "\t" + desc.Table
+		key := columnDatabaseKey(desc.Schema, desc.Table)
 		if _, ok := columnMap[key]; ok {
 			columnMap[key] = append(columnMap[key], desc)
 		} else {
@@ -148,5 +148,5 @@ func (dc *DBCache) Column(tableName, colName string) (*ColumnDesc, bool) {
 }
 
 func columnDatabaseKey(dbName, tableName string) string {
-	return dbName + "\t" + tableName
+	return strings.ToLower(dbName) + "\t" + strings.ToLower(tableName)
 }
