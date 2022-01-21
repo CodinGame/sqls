@@ -6,13 +6,13 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/lighttiger2505/sqls/ast"
-	"github.com/lighttiger2505/sqls/ast/astutil"
-	"github.com/lighttiger2505/sqls/internal/database"
-	"github.com/lighttiger2505/sqls/internal/lsp"
-	"github.com/lighttiger2505/sqls/parser"
-	"github.com/lighttiger2505/sqls/parser/parseutil"
-	"github.com/lighttiger2505/sqls/token"
+	"github.com/CodinGame/sqls/ast"
+	"github.com/CodinGame/sqls/ast/astutil"
+	"github.com/CodinGame/sqls/internal/database"
+	"github.com/CodinGame/sqls/internal/lsp"
+	"github.com/CodinGame/sqls/parser"
+	"github.com/CodinGame/sqls/parser/parseutil"
+	"github.com/CodinGame/sqls/token"
 	"github.com/sourcegraph/jsonrpc2"
 )
 
