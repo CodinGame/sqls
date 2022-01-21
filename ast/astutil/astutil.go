@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/lighttiger2505/sqls/ast"
-	"github.com/lighttiger2505/sqls/dialect"
-	"github.com/lighttiger2505/sqls/token"
+	"github.com/CodinGame/sqls/ast"
+	"github.com/CodinGame/sqls/dialect"
+	"github.com/CodinGame/sqls/token"
 )
 
 type NodeMatcher struct {
