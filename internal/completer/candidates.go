@@ -3,9 +3,9 @@ package completer
 import (
 	"strings"
 
-	"github.com/lighttiger2505/sqls/internal/database"
-	"github.com/lighttiger2505/sqls/internal/lsp"
-	"github.com/lighttiger2505/sqls/parser/parseutil"
+	"github.com/CodinGame/sqls/internal/database"
+	"github.com/CodinGame/sqls/internal/lsp"
+	"github.com/CodinGame/sqls/parser/parseutil"
 )
 
 func (c *Completer) keywordCandidates(lower bool, keywords []string) []lsp.CompletionItem {

@@ -1,8 +1,8 @@
 package lsp
 
 import (
-	"github.com/lighttiger2505/sqls/internal/config"
-	"github.com/lighttiger2505/sqls/internal/database"
+	"github.com/CodinGame/sqls/internal/config"
+	"github.com/CodinGame/sqls/internal/database"
 )
 
 // https://microsoft.github.io/language-server-protocol/specifications/specification-3-14/#initialize

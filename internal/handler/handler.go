@@ -10,9 +10,9 @@ import (
 
 	"github.com/sourcegraph/jsonrpc2"
 
-	"github.com/lighttiger2505/sqls/internal/config"
-	"github.com/lighttiger2505/sqls/internal/database"
-	"github.com/lighttiger2505/sqls/internal/lsp"
+	"github.com/CodinGame/sqls/internal/config"
+	"github.com/CodinGame/sqls/internal/database"
+	"github.com/CodinGame/sqls/internal/lsp"
 )
 
 var (
