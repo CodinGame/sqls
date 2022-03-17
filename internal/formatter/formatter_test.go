@@ -3,8 +3,8 @@ package formatter
 import (
 	"testing"
 
-	"github.com/lighttiger2505/sqls/ast"
-	"github.com/lighttiger2505/sqls/parser"
+	"github.com/CodinGame/sqls/ast"
+	"github.com/CodinGame/sqls/parser"
 )
 
 func TestRenderIdentifier(t *testing.T) {

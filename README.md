@@ -1,6 +1,6 @@
 # sqls
 
-![test](https://github.com/lighttiger2505/sqls/workflows/test/badge.svg)
+![test](https://github.com/CodinGame/sqls/workflows/test/badge.svg)
 
 An implementation of the Language Server Protocol for SQL.
 
@@ -18,6 +18,7 @@ sqls aims to provide advanced intelligence for you to edit sql in your own edito
 - PostgreSQL([pgx](https://github.com/jackc/pgx))
 - SQLite3([go-sqlite3](https://github.com/mattn/go-sqlite3))
 - MSSQL([go-mssqldb](https://github.com/denisenkom/go-mssqldb))
+- H2([pgx](https://github.com/CodinGame/h2go))
 
 ### Language Server Features
 
@@ -37,7 +38,7 @@ sqls aims to provide advanced intelligence for you to edit sql in your own edito
 
 #### CodeAction
 
-![code_actions](https://github.com/lighttiger2505/sqls.vim/blob/master/imgs/sqls_vim_demo.gif)
+![code_actions](https://github.com/CodinGame/sqls.vim/blob/master/imgs/sqls_vim_demo.gif)
 
 - [x] Execute SQL
 - [ ] Explain SQL
@@ -59,13 +60,13 @@ sqls aims to provide advanced intelligence for you to edit sql in your own edito
 ## Installation
 
 ```shell
-go get github.com/lighttiger2505/sqls
+go get github.com/CodinGame/sqls
 ```
 
 ## Editor Plugins
 
-- [sqls.vim](https://github.com/lighttiger2505/sqls.vim)
-- [vscode-sqls](https://github.com/lighttiger2505/vscode-sqls)
+- [sqls.vim](https://github.com/CodinGame/sqls.vim)
+- [vscode-sqls](https://github.com/CodinGame/vscode-sqls)
 - [sqls.nvim](https://github.com/nanotee/sqls.nvim)
 
 ## DB Configuration
@@ -116,7 +117,7 @@ connections:
       port: 22
       user: sshuser
       passPhrase: ssspass
-      privateKey: /home/lighttiger2505/.ssh/id_rsa
+      privateKey: /home/CodinGame/.ssh/id_rsa
 ```
 
 ### Workspace configuration Sample
@@ -223,7 +224,7 @@ The first setting in `connections` is the default connection.
 | Key            | Description                                 |
 | -------------- | ------------------------------------------- |
 | alias          | Connection alias name. Optional.            |
-| driver         | `mysql`, `postgresql`, `sqlite3`. Required. |
+| driver         | `mysql`, `postgresql`, `sqlite3`, `mssql`, `h2`. Required. |
 | dataSourceName | Data source name.                           |
 | proto          | `tcp`, `udp`, `unix`.                       |
 | user           | User name                                   |
@@ -256,8 +257,8 @@ See also.
 ## Contributors
 
 This project exists thanks to all the people who contribute.
-<a href="https://github.com/lighttiger2505/sqls/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=lighttiger2505/sqls" />
+<a href="https://github.com/CodinGame/sqls/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=CodinGame/sqls" />
 </a>
 
 ## Inspired

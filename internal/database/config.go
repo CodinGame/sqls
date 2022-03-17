@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/lighttiger2505/sqls/dialect"
+	"github.com/CodinGame/sqls/dialect"
 	"golang.org/x/crypto/ssh"
 )
 
@@ -69,6 +69,7 @@ func (c *DBConfig) Validate() error {
 			}
 		}
 	case dialect.DatabaseDriverSQLite3:
+	case dialect.DatabaseDriverH2:
 		if c.DataSourceName == "" {
 			return errors.New("required: connections[].dataSourceName")
 		}
